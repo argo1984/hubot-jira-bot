@@ -186,6 +186,7 @@ class JiraBot
 
     # Mentions
     @robot.on "JiraWebhookTicketMention", (ticket, user, event, context) =>
+      return if not _(ticket.watchers).findWhere name: user
       @adapter.dm user,
         text: """
           You were mentioned in a ticket by #{event.user.displayName}:
