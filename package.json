@@ -1,23 +1,40 @@
 {
-  "name": "hubot-jira-bot",
-  "description": "A hubot script for all things JIRA, see README.md for details",
-  "version": "7.4.0",
+  "_args": [
+    [
+      "hubot-jira-bot@7.4.0",
+      "/opt/jirabot"
+    ]
+  ],
+  "_from": "hubot-jira-bot@7.4.0",
+  "_id": "hubot-jira-bot@7.4.0",
+  "_inBundle": false,
+  "_integrity": "sha1-22KVTuHZ2rV7Z12LdCfdPVxmOLk=",
+  "_location": "/hubot-jira-bot",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "hubot-jira-bot@7.4.0",
+    "name": "hubot-jira-bot",
+    "escapedName": "hubot-jira-bot",
+    "rawSpec": "7.4.0",
+    "saveSpec": null,
+    "fetchSpec": "7.4.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hubot-jira-bot/-/hubot-jira-bot-7.4.0.tgz",
+  "_spec": "7.4.0",
+  "_where": "/opt/jirabot",
+  "author": {
+    "name": "Nino D'Aversa",
+    "email": "nino@ndaversa.com",
+    "url": "http://ndaversa.com"
+  },
   "authors": [
     "Nino D'Aversa <nino@ndaversa.com>"
   ],
-  "license": "MIT",
-  "keywords": [
-    "hubot",
-    "hubot-scripts",
-    "slack",
-    "jira",
-    "task",
-    "bug"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:ndaversa/hubot-jira-bot.git"
-  },
   "bugs": {
     "url": "https://github.com/ndaversa/hubot-jira-bot/issues"
   },
@@ -31,14 +48,29 @@
     "octokat": "^0.5.0-beta.0",
     "underscore": "^1.8.3"
   },
-  "main": "index.coffee",
+  "description": "A hubot script for all things JIRA, see README.md for details",
+  "devDependencies": {},
   "directories": {
     "test": "test"
+  },
+  "homepage": "https://github.com/ndaversa/hubot-jira-bot",
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "slack",
+    "jira",
+    "task",
+    "bug"
+  ],
+  "license": "MIT",
+  "main": "index.coffee",
+  "name": "hubot-jira-bot",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ndaversa/hubot-jira-bot.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/ndaversa/hubot-jira-bot",
-  "devDependencies": {},
-  "author": "Nino D'Aversa <nino@ndaversa.com> (http://ndaversa.com)"
+  "version": "7.4.0"
 }

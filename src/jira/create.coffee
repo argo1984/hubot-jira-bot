@@ -36,6 +36,7 @@ class Create
 
       _(issue.fields).extend fields if fields
       issue.fields.labels = _(issue.fields.labels).union labels
+      issue.fields.labels = _(issue.fields.labels).compact labels
       issue.fields.description += """
         #{(if description then description + "\n\n" else "")}
         Reported by #{context.message.user.name} in ##{room} on #{context.robot.adapterName}

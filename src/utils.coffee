@@ -20,7 +20,8 @@ class Utils
         "Authorization": 'Basic ' + new Buffer("#{Config.jira.username}:#{Config.jira.password}").toString('base64')
     options = _(options).extend opts
 
-    Utils.robot.logger.debug "Fetching: #{url}"
+    Utils.robot.logger.debug "Fetching: #{url} #{options}"
+    console.log(options)
     fetch(url,options).then (response) ->
       if response.status >= 200 and response.status < 300
         return response
